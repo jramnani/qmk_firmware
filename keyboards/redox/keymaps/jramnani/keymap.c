@@ -16,15 +16,36 @@ enum custom_keycodes {
   ADJUST,
 };
 
-// Shortcut to make keymap more readable
-#define SYM_L   MO(_SYMB)
 
+// Mod-tap: Hold: Left Alt, Tap: Asterisk
+// Why is it using the number pad asterisk key code?
+// Probably because Shift+8 requires a modifier.
 #define KC_ALAS LALT_T(KC_PAST)
+// Mod-tap: Hold: Left Control, Tap: backslash
 #define KC_CTPL LCTL_T(KC_BSLS)
 
+//
+// Layer activations
+//
+
+// Symbol and Numpad layer.
+// Momentarily activate. Active while button is pressed down only.
+// Descriptions based on the keycaps I got from a pre-built board
+// from Falba Tech.
+// Left hand: MO2
+// Right hand: MO1
+#define SYM_L   MO(_SYMB)
+
+// Activate NAV layer with a layer-tap. Press and hold to activate layer. Tap to enter character.
+// Location: top-left/right corners.
+// Left hand: grave/backtick
+// Right hand: minus
 #define KC_NAGR LT(_NAV, KC_GRV)
 #define KC_NAMI LT(_NAV, KC_MINS)
 
+// Activate ADJUST layer with a layer-tap. The Adjust layer handles Reset, RGB, and Function keys.
+// Left hand: PgUp
+// Right hand: End
 #define KC_ADEN LT(_ADJUST, KC_END)
 #define KC_ADPU LT(_ADJUST, KC_PGUP)
 
