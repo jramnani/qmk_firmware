@@ -52,6 +52,15 @@ enum custom_keycodes {
 #define KC_ADEN LT(_ADJUST, KC_END)
 #define KC_ADPU LT(_ADJUST, KC_PGUP)
 
+
+// Text highlighting helpers for NAV layer (Mac)
+#define KC_HIGHL LSA(KC_LEFT)
+#define KC_HIGHR LSA(KC_RIGHT)
+#define KC_HIGHU LSA(KC_UP)
+#define KC_HIGHD LSA(KC_DOWN)
+
+
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT(
