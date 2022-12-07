@@ -23,6 +23,9 @@ enum custom_keycodes {
 #define KC_ALAS LALT_T(KC_PAST)
 // Mod-tap: Hold: Left Control, Tap: backslash
 #define KC_CTPL LCTL_T(KC_BSLS)
+// Mod-tap - Hold: Left GUI, Tap: backslash
+#define KC_GUIL LGUI_T(KC_BSLS)
+
 
 //
 // Layer activations
